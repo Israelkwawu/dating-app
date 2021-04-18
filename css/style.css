@@ -1,0 +1,151 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 50rem; */
+    background-image: url("../img/raul-de-los-santos-kioGMg1MlOE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: #f16f51;
+    /* height: 40px; */
+    /* text-align: center; */
+    /* line-height: 40px; */
+    width: 100%;
+    position: fixed;
+}
+
+h1{
+  
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+
+
+#main div.row div{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    /* line-height: 100%;
+    vertical-align: middle; */
+    margin: 100px auto;
+    padding: 10px;
+}
+
+input, button, select,label{
+    padding: 10px;
+    margin: 5px ;
+
+}
+
+button{
+    border: 1px solid red;
+    outline: none;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#signup{
+    float: right;
+}
+
+.row{
+    line-height: 100%;
+    vertical-align: middle;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#results{
+    margin: 30px 20px 0 0;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+.person-row{
+    margin: 10px 35px;
+    padding: 10px;
+    background-color: #f1b951;
+    width: 90%;
+    float: left;
+    box-sizing: border-box;
+
+}
+
+.person-row img{
+    float: left;
+    margin-right: 20px;
+    width: 5rem;
+}
+
+.person-info{
+    float: left;
+    padding: 10px;
+}
+
+.person-info div{
+    margin: 5px auto;
+    padding: 7px 0;
+}
+
+.person-row > button{
+    float: right;
+}
+
+@media  screen and (min-width: 768px) {
+    
+
+    #main div.row div{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        height: 100%;
+        line-height: 100%;
+        vertical-align: middle;
+        margin: 250px auto;
+        padding: 20px;
+    }
+    
+    input, button, select,label{
+        padding: 15px;
+    
+    }
+
+    #results{
+        margin: 30px 20px 0 0;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+
+    .person-row{
+        margin: 10px 15px;
+        padding: 10px;
+        background-color: #f1b951;
+        width: 95%;
+        float: left;
+        box-sizing: border-box;
+    
+    }
+}
